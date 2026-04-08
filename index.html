@@ -10,40 +10,15 @@
 <body>
     <div class="background-decoration"></div>
     <main class="container">
-        <div class="content-wrapper">
-            <section class="card intro animate-in">
-                <div class="intro-header">
-                    <div class="badge">🎯 Security Awareness</div>
-                </div>
-                <h1>Ini adalah simulasi Security Awereness bagi pengguna layanan Teknologi Informasi Universitas Diponegoro</h1>
-                
-                <div class="message-box info">
-                    <span class="icon">💡</span>
-                    <h2 class="lead">Untuk data (password) yang anda masukkan tidak terekam, lain kali hati-hati ya😆, perhatikan email pengirim dan isi email⚠️</h2>
-                </div>
-
-                <div class="message-box safe">
-                    <span class="icon">✓</span>
-                    <h2 class="lead">Kegiatan ini tidak merubah password yang lama</h2>
-                </div>
-            </section>
-
-            <figure class="card poster animate-in" style="animation-delay: 0.2s">
-                <div class="poster-wrapper">
-                    <img src="assets/poster.png" alt="Simulasi Phishing ICT Undip">
-                </div>
-            </figure>
-        </div>
+        <h1 class="title-section">Jangan memberitau teman anda, biarlah teman anda mencari tau sendiri</h1>
+        <figure class="card poster animate-in">
+            <div class="poster-wrapper">
+                <img src="assets/poster_fix.jpeg" alt="Simulasi Phishing ICT Undip">
+            </div>
+        </figure>
     </main>
     <script>
-        document.querySelectorAll('.message-box').forEach((box, index) => {
-            box.addEventListener('mouseenter', function() {
-                this.classList.add('active');
-            });
-            box.addEventListener('mouseleave', function() {
-                this.classList.remove('active');
-            });
-        });
+        // Minimal JS - kept for future interactivity if needed
     </script>
 </body>
 </html>
