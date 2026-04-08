@@ -4,25 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulasi Phishing ICT Undip</title>
-    <style>
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: 800px;
-        }
-        h1{
-            text-align: center;
-        }
-        h2{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Ini adalah simulasi Security Awereness bagi pengguna layanan Teknologi Informasi Universitas Diponegoro</h1>
-    <h2>Untuk data (password) yang anda masukkan tidak terekam, lain kali hati-hati ya😆, perhatikan email pengirim dan isi email⚠️</h2>
-    <h2>Kegiatan ini tidak merubah password yang lama</h2>
-    <img src="assets/poster.png" alt="Simulasi Phishing ICT Undip">
+    <div class="background-decoration"></div>
+    <main class="container">
+        <div class="content-wrapper">
+            <section class="card intro animate-in">
+                <div class="intro-header">
+                    <div class="badge">🎯 Security Awareness</div>
+                </div>
+                <h1>Ini adalah simulasi Security Awereness bagi pengguna layanan Teknologi Informasi Universitas Diponegoro</h1>
+                
+                <div class="message-box info">
+                    <span class="icon">💡</span>
+                    <h2 class="lead">Untuk data (password) yang anda masukkan tidak terekam, lain kali hati-hati ya😆, perhatikan email pengirim dan isi email⚠️</h2>
+                </div>
+
+                <div class="message-box safe">
+                    <span class="icon">✓</span>
+                    <h2 class="lead">Kegiatan ini tidak merubah password yang lama</h2>
+                </div>
+            </section>
+
+            <figure class="card poster animate-in" style="animation-delay: 0.2s">
+                <div class="poster-wrapper">
+                    <img src="assets/poster.png" alt="Simulasi Phishing ICT Undip">
+                </div>
+            </figure>
+        </div>
+    </main>
+    <script>
+        document.querySelectorAll('.message-box').forEach((box, index) => {
+            box.addEventListener('mouseenter', function() {
+                this.classList.add('active');
+            });
+            box.addEventListener('mouseleave', function() {
+                this.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
